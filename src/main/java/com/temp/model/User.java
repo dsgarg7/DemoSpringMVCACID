@@ -15,7 +15,7 @@ public class User {
 		      //STEP 2: Register JDBC driver
 		      Class.forName("com.mysql.jdbc.Driver");
 		      conn = DriverManager.getConnection(DB_URL, USER, PASS);
-		      System.out.println("Connected database successfully...");
+		      //System.out.println("Connected database successfully...");
 		      //STEP 4: Execute a query
 		      stmt = conn.createStatement();
 		      String sql = "UPDATE SyncInt SET value = '"+value+"' WHERE 1";
@@ -46,7 +46,7 @@ public class User {
 	
 	// JDBC driver name and database URL
 	   static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
-	   static final String DB_URL = "jdbc:mysql://localhost:3306/gcd";
+	   static final String DB_URL = "jdbc:mysql://localhost:3306/gaucus";
 
 	   //  Database credentials
 	   static final String USER = "root";
